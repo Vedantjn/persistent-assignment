@@ -4,7 +4,6 @@ public:
         
         if(head==NULL)return head;
         
-        
         ListNode* node=head;
         while(node and node->next){
             

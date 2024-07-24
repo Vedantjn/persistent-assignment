@@ -1,10 +1,10 @@
 public:
     int peakElement(int arr[], int n)
     {
-       bool doesexist=false;
+       bool doesExist=false;
        for(int i=1;i<n-1;i++){
            if(arr[i-1]<=arr[i] && arr[i]>=arr[i+1]){
-               bool doesexist=true;
+               bool doesExist=true;
                return i;
            }
        }
