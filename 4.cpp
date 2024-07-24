@@ -17,7 +17,7 @@ class Solution {
         
         if(!root->left and !root->right ) return targetSum == currentsum;
 
-        return dfs(root->left,targetSum,currentsum) or dfs(root->right,targetSum,currentsum);
+        return dfs(root->left,targetSum,currentsum) || dfs(root->right,targetSum,currentsum);
     }
 public:
     bool hasPathSum(TreeNode* root, int targetSum) {

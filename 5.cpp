@@ -5,12 +5,11 @@ public:
         if(head==NULL)return head;
         
         ListNode* node=head;
-        while(node and node->next){
+        while(node && node->next){
             
             if(node->next->val==node->val){
                 node->next = node->next->next;
             }
-            
             else{
                 node=node->next;
             }
